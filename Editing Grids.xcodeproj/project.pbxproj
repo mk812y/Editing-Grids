@@ -11,6 +11,9 @@
 		A54DDC282AB3933300F394E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC272AB3933300F394E4 /* ContentView.swift */; };
 		A54DDC2A2AB3933400F394E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54DDC292AB3933400F394E4 /* Assets.xcassets */; };
 		A54DDC2E2AB3933400F394E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A54DDC2D2AB3933400F394E4 /* Preview Assets.xcassets */; };
+		A54DDC352AB3949800F394E4 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC342AB3949800F394E4 /* Symbol.swift */; };
+		A54DDC392AB3953400F394E4 /* SymbolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC382AB3953400F394E4 /* SymbolDetail.swift */; };
+		A54DDC3B2AB3975500F394E4 /* SymbolGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		A54DDC292AB3933400F394E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A54DDC2B2AB3933400F394E4 /* Editing_Grids.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Editing_Grids.entitlements; sourceTree = "<group>"; };
 		A54DDC2D2AB3933400F394E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A54DDC342AB3949800F394E4 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
+		A54DDC382AB3953400F394E4 /* SymbolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetail.swift; sourceTree = "<group>"; };
+		A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolGrid.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,9 @@
 			children = (
 				A54DDC252AB3933300F394E4 /* Editing_GridsApp.swift */,
 				A54DDC272AB3933300F394E4 /* ContentView.swift */,
+				A54DDC342AB3949800F394E4 /* Symbol.swift */,
+				A54DDC382AB3953400F394E4 /* SymbolDetail.swift */,
+				A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */,
 				A54DDC292AB3933400F394E4 /* Assets.xcassets */,
 				A54DDC2B2AB3933400F394E4 /* Editing_Grids.entitlements */,
 				A54DDC2C2AB3933400F394E4 /* Preview Content */,
@@ -141,6 +150,9 @@
 			files = (
 				A54DDC282AB3933300F394E4 /* ContentView.swift in Sources */,
 				A54DDC262AB3933300F394E4 /* Editing_GridsApp.swift in Sources */,
+				A54DDC3B2AB3975500F394E4 /* SymbolGrid.swift in Sources */,
+				A54DDC392AB3953400F394E4 /* SymbolDetail.swift in Sources */,
+				A54DDC352AB3949800F394E4 /* Symbol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

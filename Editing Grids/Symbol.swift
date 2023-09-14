@@ -5,4 +5,9 @@
 //  Created by Михаил Куприянов on 14.9.23..
 //
 
-import Foundation
+import SwiftUI
+
+struct Symbol: Identifiable, Equatable {
+    var id = UUID()
+    var name: String
+}
