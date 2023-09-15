@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct SymbolGrid: View {
+
     @State private var isAddingSymbol = false
     @State private var isEditing = false
-    
+
     private static let initialColumns = 3
     @State private var selectedSymbol: Symbol?
     @State private var numColumns = initialColumns
@@ -32,20 +33,18 @@ struct SymbolGrid: View {
     ]
     
     var columnsText: String {
-        numColumns > 1 ? "\(numColumns) Columns" : "1 Columns"
+        numColumns > 1 ? "\(numColumns) Columns" : "1 Column"
     }
-    
-    
+
     var body: some View {
         VStack {
             if isEditing {
                 Stepper(columnsText, value: $numColumns, in: 1...6, step: 1) { _ in
-                    withAnimation{
-                        gridColumns = Array(repeating: GridItem(.flexible()), count: numColumns)
-                    }
+                    withAnimation { gridColumns = Array(repeating: GridItem(.flexible()), count: numColumns) }
                 }
+                .padding()
             }
-            
+
             ScrollView {
                 LazyVGrid(columns: gridColumns) {
                     ForEach(symbols) { symbol in
@@ -61,13 +60,15 @@ struct SymbolGrid: View {
                                 
                                 if isEditing {
                                     Button {
-//                                        guard symbols.firstIndex(of: symbol) != nil else { return }
                                         guard let index = symbols.firstIndex(of: symbol) else { return }
+                                        withAnimation {
+                                            _ = symbols.remove(at: index)
+                                        }
                                     } label: {
-                                        Image(systemName: "xmark.squre.fill")
-                                            .font(.title)
-                                            .symbolRenderingMode(.palette)
-                                            .foregroundStyle(.white, .red)
+                                        Image(systemName: "xmark.square.fill")
+                                                    .font(.title)
+                                                    .symbolRenderingMode(.palette)
+                                                    .foregroundStyle(.white, Color.red)
                                     }
                                     .offset(x: 7, y: -7)
                                 }
@@ -79,11 +80,34 @@ struct SymbolGrid: View {
                 }
             }
         }
-        .navigationTitle("My symbol")
+        .navigationTitle("My Symbols")
         .navigationBarTitleDisplayMode(.inline)
-//        .sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {
-//            SymbolP
-//        }
+        .sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {
+            SymbolPicker(symbol: $selectedSymbol)
+        }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button(isEditing ? "Done" : "Edit") {
+                    withAnimation { isEditing.toggle() }
+                }
+            }
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    isAddingSymbol = true
+                } label: {
+                    Image(systemName: "plus")
+                }
+                .disabled(isEditing)
+            }
+        }
+
+    }
+    
+    func addSymbol() {
+        guard let name = selectedSymbol else { return }
+        withAnimation {
+            symbols.insert(name, at: 0)
+        }
     }
 }
 

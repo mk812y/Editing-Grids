@@ -12,7 +12,7 @@ struct Editing_GridsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                ContentView()
+                SymbolGrid()
             }
         }
     }
