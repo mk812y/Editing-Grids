@@ -14,6 +14,7 @@
 		A54DDC352AB3949800F394E4 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC342AB3949800F394E4 /* Symbol.swift */; };
 		A54DDC392AB3953400F394E4 /* SymbolDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC382AB3953400F394E4 /* SymbolDetail.swift */; };
 		A54DDC3B2AB3975500F394E4 /* SymbolGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */; };
+		A5B18D762AB48EE800D751EC /* SymbolPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B18D752AB48EE800D751EC /* SymbolPicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A54DDC342AB3949800F394E4 /* Symbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbol.swift; sourceTree = "<group>"; };
 		A54DDC382AB3953400F394E4 /* SymbolDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolDetail.swift; sourceTree = "<group>"; };
 		A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolGrid.swift; sourceTree = "<group>"; };
+		A5B18D752AB48EE800D751EC /* SymbolPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolPicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A54DDC342AB3949800F394E4 /* Symbol.swift */,
 				A54DDC382AB3953400F394E4 /* SymbolDetail.swift */,
 				A54DDC3A2AB3975500F394E4 /* SymbolGrid.swift */,
+				A5B18D752AB48EE800D751EC /* SymbolPicker.swift */,
 				A54DDC292AB3933400F394E4 /* Assets.xcassets */,
 				A54DDC2B2AB3933400F394E4 /* Editing_Grids.entitlements */,
 				A54DDC2C2AB3933400F394E4 /* Preview Content */,
@@ -151,6 +154,7 @@
 				A54DDC282AB3933300F394E4 /* ContentView.swift in Sources */,
 				A54DDC262AB3933300F394E4 /* Editing_GridsApp.swift in Sources */,
 				A54DDC3B2AB3975500F394E4 /* SymbolGrid.swift in Sources */,
+				A5B18D762AB48EE800D751EC /* SymbolPicker.swift in Sources */,
 				A54DDC392AB3953400F394E4 /* SymbolDetail.swift in Sources */,
 				A54DDC352AB3949800F394E4 /* Symbol.swift in Sources */,
 			);

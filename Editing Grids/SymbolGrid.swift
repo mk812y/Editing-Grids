@@ -81,9 +81,9 @@ struct SymbolGrid: View {
         }
         .navigationTitle("My symbol")
         .navigationBarTitleDisplayMode(.inline)
-        .sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {
-            SymbolP
-        }
+//        .sheet(isPresented: $isAddingSymbol, onDismiss: addSymbol) {
+//            SymbolP
+//        }
     }
 }
 
